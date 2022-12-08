@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paris</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <script type="text/javascript" src="../js/home.js"></script>
+</head>
+
+<nav class="nav-header">
+  <div class="logo">
+    <img src="../images/logo.png" class="img-logo">
+  </div>
+  <div class="list-btn-header">
+    <table>
+      <tr>
+        <th><a href="home.html" class="btn-header">Home</a></th>
+        <th><a href="event.html" class="btn-header">Event</a></th>
+        <th> <a href="history.html" class="btn-header">History</a></th>
+        <th><a href="activities.html" class="btn-header">Activities</a></th>
+        <th><a href="service.html" class="btn-header">Service</a></th>
+        <th><a href="contact.html" class="btn-header">Contact</a></th>
+      </tr>
+    </table>
+  </div>
+</nav>
+
+<div class="content">
+  
+  <div class="view-image">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="arrow-left"
+      viewBox="0 0 16 16">
+      <path
+        d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+    </svg>
+    <img src="../images/champs_elysees_1.jpg" class="img-content" id="img">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="arrow-right"
+      onclick="changeImage()" viewBox="0 0 16 16">
+      <path
+        d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+    </svg>
+  </div>
+
+  <table class="list-card">
+    <tr>
+      <th class="history" colspan="3">History</th>
+      <th class="event" colspan="3">Event</th>
+      <th class="activities" colspan="3">Activities</th>
+    </tr>
+    <tr>
+      <td onclick="changeHistory('left')" class="history arrow-left-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+        </svg>
+      </td>
+      <td class="history">
+        Alfreds Futterkiste
+      </td>
+      <td onclick="changeHistory('right')" class="history arrow-right-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+        </svg>
+      </td>
+      <td onclick="changeEvent('left')" class="event arrow-left-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+        </svg>
+      </td>
+      <td class="event">
+        Maria Anders
+      </td>
+      <td onclick="changeEvent('right')" class="event arrow-right-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+        </svg>
+      </td>
+      <td onclick="changeActivities('left')" class="activities arrow-left-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+        </svg>
+      </td>
+      <td class="activities">
+        Germany
+      </td>
+      <td onclick="getRestaurant()" class="arrow-right-sm activities">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+        </svg>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<body>

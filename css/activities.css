@@ -1,0 +1,63 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    position: relative;
+    margin-top: 105px;
+}
+
+.card img{
+    width: 400px;
+    height:300px;
+    object-fit: cover;
+    cursor:pointer;
+    transition: 0.2s ease;
+}
+.card img:hover{
+    transform: scale(1.04);
+}
+.card h1{
+    margin: 1;
+    padding: 10px 0px;
+    font-size: 20px ;
+    text-align: center;
+    background-color:#FFB6B1;
+    color: black;
+    margin-top: 30px;
+    width: 400px;
+    
+}
+
+
+#text_section_Activities{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-Right: 60px;
+    text-align: justify;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+   
+
+    
+
+    #text_section_Activities {
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-Right: 30px;
+        text-align: justify;
+    }
+
+
+  }
+
+
+
+
+

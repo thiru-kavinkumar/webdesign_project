@@ -1,0 +1,100 @@
+.img-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 550px;
+}
+
+.content {
+    z-index: 0;
+    position: relative;
+    margin-top: 105px;
+    display: block;
+}
+
+.view-image {
+    position: relative;
+    display: flex;
+}
+
+.arrow-right,
+.arrow-left,
+.arrow-right:hover,
+.arrow-left:hover {
+    padding: 235px 60px 235px 60px;
+}
+
+.arrow-right:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 251, 246, 1) 47%, rgba(255, 244, 230, 1) 100%);
+    cursor: pointer;
+}
+
+.arrow-left:hover {
+    background: linear-gradient(90deg, rgba(255, 244, 230, 1) 0%, rgba(255, 251, 246, 1) 47%, rgba(255, 255, 255, 1) 100%);
+    cursor: pointer;
+}
+
+.arrow-right-sm:hover,
+.arrow-left-sm:hover {
+    cursor: pointer;
+}
+
+
+.arrow-right-sm:hover.event,
+.arrow-left-sm:hover.event {
+    cursor: pointer;
+    background-color: #FFEFD1;
+}
+
+.arrow-right-sm:hover.activities,
+.arrow-left-sm:hover.activities {
+    cursor: pointer;
+    background-color: #F2FFE1;
+}
+
+.arrow-right-sm:hover.history,
+.arrow-left-sm:hover.history {
+    cursor: pointer;
+    background-color: #FFF5F5;
+}
+
+.list-card {
+    margin: 20px auto 20px auto;
+}
+
+.list-card tr th {
+    width: 350px;
+}
+
+.list-card tr td {
+    height: 150px;
+    text-align: center;
+}
+
+th.history {
+    background-color: #FFB6B1;
+    border-radius: 10px 0px 0px 0px;
+}
+
+th.event {
+    background-color: #FFD481;
+}
+
+th.activities {
+    background-color: #D4FF9C;
+    border-radius: 0px 10px 0px 0px;
+}
+
+td.history {
+    background-color: #ffd8d8;
+    border-radius: 0px 0px 0px 10px;
+}
+
+td.event {
+    background-color: #ffe7ba;
+}
+
+td.activities {
+    background-color: #dfffb5;
+    border-radius: 0px 0px 10px 0px;
+}
