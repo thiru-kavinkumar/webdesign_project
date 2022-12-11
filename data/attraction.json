@@ -1,0 +1,20 @@
+{
+    "attraction": [
+        {
+            "name": "Disneyland Paris",
+            "adress": "Bd de Parc, 77700 Coupvray, France",
+            "schedule": [
+                {
+                    "monday": "09:30–21:00",
+                    "tuesday": "09:30–21:00",
+                    "wednesday": "09:30–21:00",
+                    "thursday": "09:30–21:00",
+                    "friday": "09:30–21:00",
+                    "saturday": "9:30-22:30",
+                    "sunday": "9:30-22:30"
+                }
+            ],
+            "website": "https://www.oetkercollection.com/fr/hotels/le-bristol-paris/restaurants-et-bar/epicure/"
+        }
+    ]
+}
