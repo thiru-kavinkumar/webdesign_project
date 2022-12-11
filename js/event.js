@@ -5,6 +5,7 @@ let nb_event = 10;
 let title_arr = []; 
 let para_arr = []; 
 let img_arr = [];
+let page_id= 0; 
 
 // api url
 const api_url = 
@@ -32,8 +33,7 @@ getapi(api_url);
 // Set page number 
 set_nb_page();
 
-// set page number 
-set_box_extend();
+
 
 // Function to get number of event 
 function get_nb_event(data) {
@@ -50,24 +50,36 @@ function feed_arr(data) {
 
 function set_html(){
     let id_first = "event-"; 
-    for (let i=1; i<=nb_div; i++){
+    let start = page_id * nb_div + 1
+    let end = start + nb_div-1; 
+    end = end>nb_event?nb_event:end; 
+    let txt = ``
+    for (let i=start; i<=end; i++){
         let id = id_first+i;
-        let txt =`<h3 class="h3_class">` + title_arr[i-1] + `</h3>
-        <div class="info" id="info-`+i+`">
-            <img src="`+img_arr[i-1]+`">
-            <div class="p_class">`+para_arr[i-1]+`</div>`;
+         txt +=`
+         <div class="event_class" id="`+id+`">
+            <h3 class="h3_class">` + title_arr[i-1] + `</h3>
+            <div class="info" id="info-`+i+`">
+                <img src="`+img_arr[i-1]+`">
+            <div class="p_class">`+para_arr[i-1]+`</div>
+            </div>
+         </div>`;
         
-        document.getElementById(id).innerHTML = txt;
-
+    document.getElementById("main-div").innerHTML = txt;
     }
+    set_box_extend();
 }
 
 function set_box_extend(){
-    for (let i=1; i<=nb_div; i++){
+    let start = page_id * nb_div + 1
+    let end = start + nb_div-1; 
+    end = end>nb_event?nb_event:end; 
+    console.log("lol");
+    for (let i=start; i<=end; i++){
         
         document.getElementById("event-"+i).addEventListener("click", (event)=>{
-            for (let j=1; j<=nb_div; j++){
-
+            
+            for (let j=start; j<=end; j++){
                 let el = document.getElementById("info-"+j);
                 el.style.overflow = "hidden";
                 el.style.maxHeight = "200px";
@@ -95,5 +107,33 @@ function set_nb_page(){
         txt += `<p id="page-`+i+`">&nbsp;`+i+`&nbsp;</p>`;
     }
     el.innerHTML = txt;
+
+    set_page_nb_function();
+    
+    
+
+}
+
+function set_page_nb_function(){
+    const max_page = Math.floor(nb_event/nb_div) + 1;
+
+    for (let i=1; i<=max_page; i++){
+        document.getElementById("page-"+i).addEventListener("click", (event)=>{
+            page_id = i-1;
+            set_html();
+            page_nb_active(max_page);
+            
+        })
+    }
+}
+
+function page_nb_active(max_page){
+    for (let i=1; i<=max_page; i++){
+        let el = document.getElementById("page-"+i)
+        el.style.color = "black"; 
+            
+        }
+    let el = document.getElementById("page-"+(page_id+1))
+    el.style.color = "rosybrown"; 
 
 }
