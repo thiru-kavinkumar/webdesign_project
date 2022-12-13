@@ -14,7 +14,23 @@
                     "sunday": "9:30-22:30"
                 }
             ],
-            "website": "https://www.oetkercollection.com/fr/hotels/le-bristol-paris/restaurants-et-bar/epicure/"
+            "website": "https://www.disneylandparis.com/fr-fr/"
+        },
+        {
+            "name": "Parc Astérix",
+            "adress": " Parc Astérix, 60128 Plailly, France",
+            "schedule": [
+                {
+                    "monday": "11:00-19:00",
+                    "tuesday": "11:00-19:00",
+                    "wednesday": "11:00-19:00",
+                    "thursday": "11:00-19:00",
+                    "friday": "11:00-19:00",
+                    "saturday": "11:00-19:00",
+                    "sunday": "11:00-19:00"
+                }
+            ],
+            "website": "https://www.parcasterix.fr/"
         }
     ]
 }

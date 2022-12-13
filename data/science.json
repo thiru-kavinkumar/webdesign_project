@@ -1,0 +1,109 @@
+{
+    "science": [
+        {
+            "name": "Cité des sciences",
+            "adress": "30 Av. Corentin Cariou, 75019 Paris, France",
+            "website": "https://www.cite-sciences.fr/fr/accueil/",
+            "phone": "+33 1 40 05 70 00",
+            "images": [
+                "https://lh5.googleusercontent.com/p/AF1QipMyRV9J7fl2nYQnT1UwHAuhB_yvlAUZGBBEXrrk=w243-h304-n-k-no-nu",
+                "https://lh5.googleusercontent.com/p/AF1QipMKtVdZktdIxcChW5K5usGP5LBLxvaDwhS1lKE8=w243-h174-n-k-no-nu"
+            ],
+            "schedule": [
+                {
+                    "monday": "9:30-18:00",
+                    "tuesday": "9:30-18:00",
+                    "wednesday": "9:30-18:00",
+                    "thursday": "9:30-18:00",
+                    "friday": "9:30-18:00",
+                    "saturday": "9:30-18:00",
+                    "sunday": "9:30-19:00"
+                }
+            ]
+        },
+        {
+            "name": "Palais de la Découverte",
+            "adress": "Av. Franklin Delano Roosevelt, 75008 Paris, France",
+            "website": "https://www.palais-decouverte.fr/fr/accueil",
+            "phone": "+33 1 56 43 20 20",
+            "images": [
+                "https://lh5.googleusercontent.com/p/AF1QipO2hBMLkkyhphcC-qHNAeD-x4vhJkTjS89EXwQ=w243-h174-n-k-no-nu",
+                "https://lh3.googleusercontent.com/p/AF1QipPb6bahItZCBu6cDQf00QVsoYObpQcDDV0Torh2=s1360-w1360-h1020"
+            ],
+            "schedule": [
+                {
+                    "monday": "Closed",
+                    "tuesday": "Closed",
+                    "wednesday": "Closed",
+                    "thursday": "Closed",
+                    "friday": "Closed",
+                    "saturday": "Closed",
+                    "sunday": "Closed"
+                }
+            ]
+        },
+        {
+            "name": "Les Étincelles du Palais de la découverte",
+            "adress": "186 Rue St Charles, 75015 Paris, France",
+            "website": "https://www.palais-decouverte.fr/fr/venir-nous-voir/les-etincelles",
+            "phone": "+33 1 56 43 20 20",
+            "images": [
+                "https://lh3.googleusercontent.com/p/AF1QipPUPPOaqo1gxPb8gt5gSQtwyngHMVkFYnv67csG=s1360-w1360-h1020",
+                "https://lh3.googleusercontent.com/p/AF1QipMJ-mIMP1irlaWfqIY4AEqYL5mpY-iySbUBQkTf=s1360-w1360-h1020"
+            ],
+            "schedule": [
+                {
+                    "monday": "10:00–18:00",
+                    "tuesday": "10:00–18:00",
+                    "wednesday": "10:00–18:00",
+                    "thursday": "10:00–18:00",
+                    "friday": "10:00–18:00",
+                    "saturday": "10:00–18:00",
+                    "sunday": "10:00–18:00"
+                }
+            ]
+        },
+        {
+            "name": "Musée de l'Homme",
+            "adress": "17 Pl. du Trocadéro et du 11 Novembre, 75116 Paris, France",
+            "website": "https://www.museedelhomme.fr/",
+            "phone": " +33 1 44 05 72 72",
+            "images": [
+                "https://lh3.googleusercontent.com/p/AF1QipPUPPOaqo1gxPb8gt5gSQtwyngHMVkFYnv67csG=s1360-w1360-h1020",
+                "https://lh3.googleusercontent.com/p/AF1QipMJ-mIMP1irlaWfqIY4AEqYL5mpY-iySbUBQkTf=s1360-w1360-h1020"
+            ],
+            "schedule": [
+                {
+                    "monday": "11:00–19:00",
+                    "tuesday": "Closed",
+                    "wednesday": "11:00–19:00",
+                    "thursday": "11:00–19:00",
+                    "friday": "11:00–19:00",
+                    "saturday": "11:00–19:00",
+                    "sunday": "11:00–19:00"
+                }
+            ]
+        },
+        {
+            "name": "Musée Curie",
+            "adress": "1 Rue Pierre et Marie Curie, 75005 Paris, France",
+            "website": "https://www.museedelhomme.fr/",
+            "phone": " +33 1 44 05 72 72",
+            "images": [
+                "https://lh3.googleusercontent.com/p/AF1QipNgtfkyEpdawSCZKPYW4FpEXTMb7Ip4xkcmYlWZ=s1360-w1360-h1020",
+                "https://lh3.googleusercontent.com/p/AF1QipO6CTQvUZZ3NPFrJnsJJTO6R46JQJGkRpDpbnFJ=s1360-w1360-h1020"
+            ],
+            "schedule": [
+                {
+                    "monday": "Closed",
+                    "tuesday": "Closed",
+                    "wednesday": "13:00–17:00",
+                    "thursday": "13:00–17:00",
+                    "friday": "13:00–17:00",
+                    "saturday": "13:00–17:00",
+                    "sunday": "Closed"
+                }
+            ]
+        }
+    ]
+}
