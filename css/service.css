@@ -37,10 +37,18 @@
 
 #text_section_service {
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 220px;
     margin-Right: 60px;
     text-align: justify;
 }
+#text_section_service img {
+    margin-left: 220px;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+} 
+
+
 
 
 
