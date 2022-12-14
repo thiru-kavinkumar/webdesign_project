@@ -27,7 +27,7 @@
     padding: 10px 0px;
     font-size: 20px;
     text-align: center;
-    background-color: #FFB6B1;
+    background-color: #FFF0DC;
     color: black;
     margin-top: 30px;
     width: 400px;
@@ -36,18 +36,42 @@
 
 
 #text_section_service {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 220px;
     margin-Right: 60px;
     text-align: justify;
 }
-#text_section_service img {
-    margin-left: 220px;
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-} 
 
+#text_section_service img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#text_section_service #accommodation h1{
+    
+    
+}
+
+#text_section_service #restaurant{
+    
+}
+#text_section_service #sport{
+    
+
+}
+#text_section_service #park{
+
+}
+
+#text_section_service #transportation{
+
+}
+
+
+#text_section_service #library{
+
+}
 
 
 
