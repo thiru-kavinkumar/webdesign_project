@@ -11,9 +11,9 @@ async function displayAccomodation() {
         <h1>`+d["name"]+`</h1>
         <img src="`+d["image"]+`">
         <p>
-        Type : `+d["type"]+`<br>
-        Star : `+d["star_rating"]+`<br>
-        Price : `+d["price_range"]+`
+        <span class="type"> Type </span> : `+d["type"]+`<br>
+        <span class="star"> Star </span>: `+d["star_rating"]+`<br>
+        <span class="price"> Price </span>: `+d["price_range"]+`
         </p>
         `;
 
