@@ -10,12 +10,15 @@ async function displayCard1() {
         txt += `
         <div>
         <h1>`+d["name"]+`</h1>
+        <div class="img-div">
         <img src="`+d["image"]+`">
+        
         <p>
         <span class="type"> Type </span> : `+d["type"]+`<br>
         <span class="star"> Star </span>: `+d["star_rating"]+`<br>
         <span class="price"> Price </span>: `+d["price_range"]+`
         </p>
+        </div>
         </div>
         `;
     }
@@ -34,6 +37,7 @@ async function displayCard2() {
         txt += `
         <div>
             <h1>`+d["name"]+`</h1>
+            <div class="img-div">
             <img src="`+d["images"][0]+`">
             <img src="`+d["images"][1]+`">
             <img src="`+d["images"][2]+`"><br>
@@ -62,6 +66,7 @@ async function displayCard2() {
                 </tr>
             </table>
             </p>
+            </div>
         </div>
         `;
     }
@@ -77,13 +82,15 @@ async function displayCard3() {
     let txt = `<h1> Park</h1>`
     for (let d of data.Park){
         txt += `
-        <div>
+        <>
             <h1>`+d["name"]+`</h1>
+            <div class="img-div">
             <img src="`+d["image"]+`">
             <p>
             <span class="description"> Description : </span>: `+d["description"]+`<br>
             <span class="adress"> Adress </span> : `+d["adress"]+`
             </p>
+            </div>
         </div>
         `;
     }
@@ -101,10 +108,12 @@ async function displayCard4() {
         txt += `
         <div>
             <h1>`+d["name"]+`</h1>
+            <div class="img-div">
             <img src="`+d["image"]+`">
             <p>
             <span class="description"> Description : </span>: `+d["description"]+`
             </p>
+            </div>
         </div>
         `;
     }
@@ -122,11 +131,13 @@ async function displayCard5() {
         txt += `
         <div >
             <h1>`+d["name"]+`</h1>
+            <div class="img-div">
             <img src="`+d["image"]+`">
             <p>
             <span class="facilities"> Facilities : </span>: `+d["facilities"]+`<br>
             <span class="location"> Location : </span>: `+d["location"]+`<br>
             </p>
+            </div>
         </div>
         `;
     }
@@ -145,10 +156,12 @@ async function displayCard6() {
         txt += `
         <div >
             <h1>`+d["name"]+`</h1>
+            <div class="img-div">
             <img src="`+d["image"]+`">
             <p>
             <span class="location"> Description : </span>: `+d["description"]+`
             </p>
+            </div>
         </div>
         `;
     }
