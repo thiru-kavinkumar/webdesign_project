@@ -78,3 +78,24 @@ development of modern painting.
     </p>
     `
 }
+
+function onLoad() {
+    var url = new URL(window.location.href);
+    var title = url.searchParams.get("title");
+    switch (title) {
+        case 'Modern Era':
+            showModernEra();
+            break;
+        case 'First Empire':
+            showFirstEmpire();
+            break;
+        case 'Middle Age':
+            showMiddleAge();
+            break;
+        case 'Roman Empire':
+            showRoman();
+            break;
+    }
+}
+
+onLoad()

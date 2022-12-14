@@ -98,3 +98,23 @@ td.activities {
     background-color: #dfffb5;
     border-radius: 0px 0px 10px 0px;
 }
+
+.history .title {
+    vertical-align: top;
+}
+
+ .clickable:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+div {
+    white-space: initial;
+}
+
+#home-event-img,
+#home-activities-img,
+#home-history-img {
+    width: 80%;
+    height: 110%;
+}

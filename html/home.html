@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/header.css">
   <script type="text/javascript" src="../js/home.js"></script>
+  <script type="text/javascript" src="../js/history.js"></script>
 </head>
 
 <nav class="nav-header">
@@ -29,13 +30,13 @@
 <div class="content">
   <div class="view-image">
     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="arrow-left"
-      viewBox="0 0 16 16">
+      onclick="changeImage('left')" viewBox="0 0 16 16">
       <path
         d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
     </svg>
     <img src="../images/champs_elysees_1.jpg" class="img-content" id="img">
     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="arrow-right"
-      onclick="changeImage()" viewBox="0 0 16 16">
+      onclick="changeImage('right')" viewBox="0 0 16 16">
       <path
         d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
     </svg>
@@ -55,7 +56,14 @@
         </svg>
       </td>
       <td class="history">
-        Alfreds Futterkiste
+        <div class="title">
+          <span id="home-history">
+            Roman Empire
+          </span>
+        </div>
+        <img src="../images/roman_empire.jpg" id="home-history-img">
+        <br>
+        <span class="clickable" onclick="redirect('history')">Read</span>
       </td>
       <td onclick="changeHistory('right')" class="history arrow-right-sm">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
@@ -70,7 +78,14 @@
         </svg>
       </td>
       <td class="event">
-        Maria Anders
+        <div class="title">
+          <span id="home-event">
+            Bio-inspired, another approach to the exhibition
+          </span>
+        </div>
+        <img src="../images/event1.jpg" id="home-event-img">
+        <br>
+        <span class="clickable" onclick="redirect('event')">Read</span>
       </td>
       <td onclick="changeEvent('right')" class="event arrow-right-sm">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
@@ -85,9 +100,16 @@
         </svg>
       </td>
       <td class="activities">
-        Germany
+        <div class="title">
+          <span id="home-activities">
+            Building
+          </span>
+        </div>
+        <img src="../images/building.jpg" id="home-activities-img">
+        <br>
+        <span class="clickable" onclick="redirect('activities')">Read</span>
       </td>
-      <td onclick="getRestaurant()" class="arrow-right-sm activities">
+      <td onclick="changeActivities('right')" class="arrow-right-sm activities">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
           <path
             d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
