@@ -56,3 +56,25 @@ img {
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .event_class p {
+        display: none;
+    }
+
+    .event_class {
+        margin: 50px 50px;
+    }
+
+    img {
+        float: none;
+        max-height: none;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .event_class h3  {
+        font-size: 17px;
+    }
+
+}
