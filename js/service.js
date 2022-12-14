@@ -31,8 +31,8 @@ async function displayCard2() {
         <div id="restuarant">
             <h1>`+d["name"]+`</h1>
             <img src="`+d["images"][0]+`">
-            <img src="`+d["images"][1]+`
-            <img src="`+d["images"][2]+`<br>
+            <img src="`+d["images"][1]+`">
+            <img src="`+d["images"][2]+`"><br>
             <p>
             <span class="adress"> Adress </span> : `+d["adress"]+`<br>
             <span class="website"> Website </span>: `+d["website"]+`<br>
