@@ -4,9 +4,11 @@ async function displayCard1() {
     let data = await response.json();
 
     let el = document.getElementById("text_section_service"); 
-    let txt = ``
+    
+    let txt = `<h1> Accommodation </h1>`
     for (let d of data.accommodation){
         txt += `
+        <div>
         <h1>`+d["name"]+`</h1>
         <img src="`+d["image"]+`">
         <p>
@@ -14,9 +16,11 @@ async function displayCard1() {
         <span class="star"> Star </span>: `+d["star_rating"]+`<br>
         <span class="price"> Price </span>: `+d["price_range"]+`
         </p>
+        </div>
         `;
     }
     el.innerHTML = txt;
+    window.location.href = "#text_section_service";
 }
 
 
@@ -25,10 +29,10 @@ async function displayCard2() {
     const response = await fetch("../data/restaurant.json");
     let data = await response.json();
     let el = document.getElementById("text_section_service"); 
-    let txt = ``
+    let txt = `<h1> Restaurant </h1>`
     for (let d of data.restaurants){
         txt += `
-        <div id="restuarant">
+        <div>
             <h1>`+d["name"]+`</h1>
             <img src="`+d["images"][0]+`">
             <img src="`+d["images"][1]+`">
@@ -62,6 +66,7 @@ async function displayCard2() {
         `;
     }
     el.innerHTML = txt;
+    window.location.href = "#text_section_service";
 }
 
 async function displayCard3() {
@@ -69,10 +74,10 @@ async function displayCard3() {
     const response = await fetch("../data/park.json");
     let data = await response.json();
     let el = document.getElementById("text_section_service"); 
-    let txt = ``
+    let txt = `<h1> Park</h1>`
     for (let d of data.Park){
         txt += `
-        <div id="park">
+        <div>
             <h1>`+d["name"]+`</h1>
             <img src="`+d["image"]+`">
             <p>
@@ -83,6 +88,7 @@ async function displayCard3() {
         `;
     }
     el.innerHTML = txt;
+    window.location.href = "#text_section_service";
 }
 
 async function displayCard4() {
@@ -90,10 +96,10 @@ async function displayCard4() {
     const response = await fetch("../data/transportation.json");
     let data = await response.json();
     let el = document.getElementById("text_section_service"); 
-    let txt = ``
+    let txt = `<h1> Transport </h1>`
     for (let d of data.transportation){
         txt += `
-        <div id="transportation">
+        <div>
             <h1>`+d["name"]+`</h1>
             <img src="`+d["image"]+`">
             <p>
@@ -103,6 +109,7 @@ async function displayCard4() {
         `;
     }
     el.innerHTML = txt;
+    window.location.href = "#text_section_service";
 }
 
 async function displayCard5() {
@@ -110,10 +117,10 @@ async function displayCard5() {
     const response = await fetch("../data/sports.json");
     let data = await response.json();
     let el = document.getElementById("text_section_service"); 
-    let txt = ``
+    let txt = `<h1> Sport </h1>`
     for (let d of data.sports_venues){
         txt += `
-        <div id="transportation">
+        <div >
             <h1>`+d["name"]+`</h1>
             <img src="`+d["image"]+`">
             <p>
@@ -124,6 +131,7 @@ async function displayCard5() {
         `;
     }
     el.innerHTML = txt;
+    window.location.href = "#text_section_service";
 }
 
 
@@ -132,10 +140,10 @@ async function displayCard6() {
     const response = await fetch("../data/library.json");
     let data = await response.json();
     let el = document.getElementById("text_section_service"); 
-    let txt = ``
+    let txt = `<h1> Library </h1>`
     for (let d of data.libraries){
         txt += `
-        <div id="library">
+        <div >
             <h1>`+d["name"]+`</h1>
             <img src="`+d["image"]+`">
             <p>
@@ -145,4 +153,5 @@ async function displayCard6() {
         `;
     }
     el.innerHTML = txt;
+    window.location.href = "#text_section_service";
 }

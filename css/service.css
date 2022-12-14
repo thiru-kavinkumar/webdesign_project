@@ -1,8 +1,8 @@
-.main {
+.main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     padding: 30px 20px;
     grid-column-gap: 20px;
     grid-row-gap: 25px;
@@ -10,76 +10,88 @@
     margin-top: 105px;
 }
 
-.card img {
+.card img{
     width: 400px;
-    height: 300px;
+    height:300px;
     object-fit: cover;
-    cursor: pointer;
+    cursor:pointer;
     transition: 0.2s ease;
 }
-
-.card img:hover {
+.card img:hover{
     transform: scale(1.04);
 }
-
-.card h1 {
+.card h1{
     margin: 1;
     padding: 10px 0px;
-    font-size: 20px;
+    font-size: 20px ;
     text-align: center;
-    background-color: #FFF0DC;
+    background-color:#FFF0DC;
     color: black;
     margin-top: 30px;
     width: 400px;
-
+    
 }
-
 
 #text_section_service {
     margin-top: 30px;
     margin-left: 220px;
-    margin-Right: 60px;
+    margin-right: 220px;
     text-align: justify;
 }
 
 #text_section_service img {
     width: 350px;
     height: 200px;
-    object-fit: cover;
+
+} 
+
+.img-div{
+    text-align: center;
 }
 
-#text_section_service #accommodation h1{
-    
-    
+#text_section_service h1 {
+    background-color: #FFF0DC;
+    padding: 30px 0 30px 30px;
+    font-size: 25px;
+   
 }
 
-#text_section_service #restaurant{
-    
-}
-#text_section_service #sport{
-    
-
-}
-#text_section_service #park{
-
-}
-
-#text_section_service #transportation{
+#text_section_service > div {
+    background-color: #FFFAF2; 
+    margin: 50px 0px;
 
 }
 
-
-#text_section_service #library{
-
+#text_section_service p {
+    padding: 10px 0 10px 30px;
+    line-height: 30px;
+}
+#text_section_service table {
+    padding: 10px 0 10px 0px;
 }
 
+#text_section_service td, #text_section_service th {
+    width: 150px;
+    text-align: center;
+}
+
+#text_section_service > h1   {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 80px;
+    background-color: white;
+}
+
+span {
+    font-weight: bold;
+}
 
 
 
 @media only screen and (max-width: 400px) {
+   
 
-
-
+    
 
     #text_section_service {
         margin-top: 50px;
@@ -89,4 +101,9 @@
     }
 
 
-}
+  }
+
+
+
+
+
