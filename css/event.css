@@ -1,0 +1,80 @@
+.main {
+    position: relative;
+    margin-top: 145px;
+}
+
+/* Event Title */ 
+.event_class h3  {
+    background-color: #FFF0DC;  
+    margin: 0;
+    padding: 30px 0 30px 30px;
+    font-size: 20px;
+}
+
+/* Event paragraphe */
+.event_class p {
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.event_class {
+    margin: 50px 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rosybrown;
+}
+
+a.active {
+    color: rosybrown;
+
+}
+
+.event_class div {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFAF2;  
+    max-height: 200px;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+
+#page-nb {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .event_class p {
+        display: none;
+    }
+
+    .event_class {
+        margin: 50px 50px;
+    }
+
+    img {
+        float: none;
+        max-height: none;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .event_class h3  {
+        font-size: 17px;
+    }
+
+}
