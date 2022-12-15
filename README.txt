@@ -1,6 +1,6 @@
 Web design project made by Kavinkumar Thirunavukkarasu, Jeremy Ros, Bibila Jodry
 
-Github link of the project:
+Github link of the project: " https://github.com/jerros740/webdesign_project.git "
 
 Our project is facing some issues with displaying all the content and screen. So to fix it:
 
