@@ -82,7 +82,7 @@ async function displayCard3() {
     let txt = `<h1> Park</h1>`
     for (let d of data.Park){
         txt += `
-        <div>
+        <>
             <h1>`+d["name"]+`</h1>
             <div class="img-div">
             <img src="`+d["image"]+`">
