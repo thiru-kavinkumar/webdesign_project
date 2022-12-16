@@ -1,6 +1,3 @@
-We tried uploading the project by reducing the images and the other data but we 
-were unable to do it so here is the link of the project on Github.
-
 Github link of the project: " https://github.com/jerros740/webdesign_project.git "
 
 Web design project made by Kavinkumar Thirunavukkarasu, Jeremy Ros, Bibila Jodry
