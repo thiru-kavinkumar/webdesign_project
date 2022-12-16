@@ -17,9 +17,11 @@
     cursor:pointer;
     transition: 0.2s ease;
 }
+
 .card img:hover{
     transform: scale(1.04);
 }
+
 .card h1{
     margin: 1;
     padding: 10px 0px;
@@ -89,6 +91,8 @@ span {
 .img-div{
     text-align: center;
 }
+
+
 
 
 
